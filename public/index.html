@@ -1,52 +1,252 @@
+<!DOCTYPE HTML>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title></title>
 
-    <!-- Bootstrap -->
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-    <style>
-      /* A little styling to improve the design */
+  <style>
+    .img-rounded {
+      border-radius: 16px;
+    }
 
-      .img-rounded {
-        border-radius: 16px;
-      }
+    ul {
+      margin: 0;
+    }
 
-      ul {
-        margin: 0;
-      }
+    .pagination {
+      margin: 0;
+    }
 
-      .pagination {
-        margin: 0;
-      }
+    table {
+      font-size: inherit;
+    }
 
-      table {
-        font-size: inherit;
-      }
+    .login-well {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
 
-      .login-well {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-      }
-      .login-well div {
-        margin: 10px 20px;
-      }
-    </style>
-  </head>
-  <body>
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script type="text/javascript" src="assets/js/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
-  </body>
+    .login-well div {
+      margin: 10px 20px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+             <span class="sr-only">Toggle navigation</span>
+             <span class="icon-bar"></span>
+             <span class="icon-bar"></span>
+             <span class="icon-bar"></span>
+           </button>
+        <a class="navbar-brand" href="#">TIY Sports</a>
+      </div>
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="#">Home <span class="sr-only">(current)</span></a></li>
+          <li><a href="#">About us</a></li>
+          <li><a href="#">Teams</a></li>
+          <li><a href="#">Players</a></li>
+          <li><a href="#">Games</a></li>
+        </ul>
+        <form class="navbar-form navbar-right">
+          <div class="input-group">
+            <input type="text" class="form-control">
+            <span class="input-group-btn">
+               <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
+            </span>
+          </div>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">
+
+    <div class="jumbotron">
+      <div class="media">
+        <div class="media-body">
+          <h1 class="media-heading">TIY Sports</h1>
+          <p><span class="glyphicon glyphicon-heart" aria-hidden="true"></span><small> For the students of The Iron Yard</small></p>
+        </div>
+        <div class="media-right">
+          <img class="img-circle" src="assets/images/sports.jpg" alt="Olympic Hurdling" width="140" height="140">
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-3">
+        <div class="thumbnail">
+          <img src="assets/images/football.jpg" alt="Football Player">
+          <div class="caption">
+            <h3 class="text-center">Football</h3>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="thumbnail">
+          <img src="assets/images/baseball.jpg" alt="Baseball Stadium">
+          <div class="caption">
+            <h3 class="text-center">Baseball</h3>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="thumbnail">
+          <img src="assets/images/basketball.jpg" alt="Basketball Hoop">
+          <div class="caption">
+            <h3 class="text-center">Basketball</h3>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="thumbnail">
+          <img src="assets/images/quidditch.jpg" alt="Quidditch">
+          <div class="caption">
+            <h3 class="text-center">Quidditch</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="alert alert-warning" role="alert">We've added some brand new features in version 2.0! <span class="small"><a>Learn More</a></span></div>
+
+    <div class="well">
+      <div class="media">
+        <div class="media-body media-middle">
+          <div class="media-heading">
+            <i class="glyphicon glyphicon-user" aria-hidden="true"></i> Please <strong>log in</strong> to edit
+          </div>
+        </div>
+        <div class="media-right media-middle">
+          <button type="button" class="btn btn-primary"><span class="fa fa-facebook" aria-hidden="true"></span> Facebook</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="panel panel-primary">
+      <div class="panel-heading">
+        <span class="glyphicon glyphicon-triangle-right" aria-hidden="true"></span> Teams<span class="badge pull-right">317 teams</span>
+      </div>
+      <div class="panel-body">
+        <div class="media">
+          <div class="media-left">
+            <img class="media-object" src="assets/images/dartboard.png" width=75 height=75 alt="Dartboard">
+          </div>
+          <div class="media-body">
+            <h4 class="media-heading">Tampa Dart Dynamos<span class="badge pull-right">8 players</span></h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          </div>
+        </div>
+        <div class="media">
+          <div class="media-left">
+            <img class="media-object img-rounded" src="assets/images/pingpong.jpg" width=75 height=75 alt="Ping-Pong Player">
+          </div>
+          <div class="media-body">
+            <h4 class="media-heading">St Pete Ping Pong Power House<span class="badge pull-right">8 players</span></h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          </div>
+        </div>
+        <div class="media">
+          <div class="media-left">
+            <img class="media-object img-rounded" src="assets/images/golf.jpg" width=75 height=75 alt="Gold Course">
+          </div>
+          <div class="media-body">
+            <h4 class="media-heading">Orlando Golf Gang<span class="badge pull-right">8 players</span></h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="panel-footer text-center">
+        <nav aria-label="Page navigation">
+          <ul class="pagination">
+            <li>
+              <a href="#" aria-label="Previous">
+                <span aria-hidden="true">&laquo;</span>
+              </a>
+            </li>
+            <li><a href="#">1</a></li>
+            <li><a href="#">2</a></li>
+            <li class="active"><a href="#">3</a></li>
+            <li><a href="#">4</a></li>
+            <li><a href="#">5</a></li>
+            <li><a href="#">6</a></li>
+            <li>
+              <a href="#" aria-label="Next">
+                <span aria-hidden="true">&raquo;</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+    <div class="panel panel-primary">
+      <div class="panel-heading">
+        <span class="glyphicon glyphicon-check" aria-hidden="true"></span> Games
+      </div>
+
+      <table class="table table-fixed">
+        <thead>
+          <tr>
+            <th class="col-xs-1 col-md-1">#</th>
+            <th class="col-xs-5 col-md-5">Home Team</th>
+            <th class="col-xs-5 col-md-5">Away Team</th>
+            <th class="col-xs-1 col-md-1">Score</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="success">
+            <td>1</td>
+            <td>Tampa Dart Dynamos</td>
+            <td>Buffalo BullsEyes</td>
+            <td>20-17</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>St. Pete Ping Pong Power House</td>
+            <td>Philly Paddlers</td>
+            <td>18-12</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Orlando Golf Gang</td>
+            <td>Portland Putters</td>
+            <td>2-1</td>
+          </tr>
+        </tbody>
+      </table>
+
+
+    </div>
+
+
+  </div>
+
+
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script type="text/javascript" src="assets/js/jquery.min.js"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+</body>
+
 </html>
