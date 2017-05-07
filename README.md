@@ -19,6 +19,7 @@ Our illustrious designer, B. Strap, has provided us with the following mockups f
 Our task is to reproduce this design!
 
 ## DEMO
+
 ![](https://raw.githubusercontent.com/brunz36/bootstrap-design/master/docs/bootstrap-design.gif)
 
 ## Desktop view
